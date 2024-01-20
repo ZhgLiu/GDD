@@ -39,3 +39,15 @@ python tools/train.py configs/distillers/gdd/cascade_mask_rcnn_rx101_32x4d_disti
 #multi GPU
 bash tools/dist_train.sh configs/distillers/gdd/reppoints_rx101_64x4d_distill_reppoints_r50_fpn_2x_coco.py 2
 bash tools/dist_train.sh configs/distillers/gdd/cascade_mask_rcnn_rx101_32x4d_distill_faster_rcnn_r50_fpn_2x_coco.py 2
+```
+## Test
+```
+#single GPU
+python tools/test.py configs/retinanet/reppoints_rx101_64x4d_distill_reppoints_r50_fpn_2x_coco.py model_file --eval bbox
+python tools/test.py configs/retinanet/reppoints_moment_r50_fpn_gn-neck+head_2x_coco.py model_file --eval bbox
+```
+```
+#multi GPU
+bash tools/dist_test.sh configs/retinanet/faster_rcnn_r50_fpn_2x_coco.py.py model_file 2 --eval bbox
+bash tools/dist_test.sh configs/retinanet/reppoints_moment_r50_fpn_gn-neck+head_2x_coco.py model_file 2 --eval bbox
+```

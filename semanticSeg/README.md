@@ -50,8 +50,10 @@ bash tools/dist_train.sh configs/distillers/gdd/psp_r101_distill_deepv3_r18_40k_
 ```
 #single GPU
 python tools/test.py configs/pspnet/pspnet_r18-d8_512x512_40k_cityscapes.py model_file --eval mIoU
+deeplabv3_r18-d8_512x512_40k_cityscapes.py model_file --eval mIoU
 ```
 ```
 #multi GPU
 bash tools/dist_test.sh configs/pspnet/pspnet_r18-d8_512x512_40k_cityscapes.py model_file 2 --eval mIoU
+bash tools/dist_test.sh configs/pspnet/deeplabv3_r18-d8_512x512_40k_cityscapes.py model_file 2 --eval mIoU
 ```

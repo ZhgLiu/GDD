@@ -32,8 +32,9 @@ mmdetection/tools/train.py with tools/train.py(ours)
 ## Train
 ```
 #single GPU
-python tools/train.py configs/distillers/gdd/solo_r101_ms_distill_solo_r50_coco.py
-
-
+python tools/test.py configs/solo/solo_r50_fpn_1x_coco.py model_file --eval segm
+```
+```
 #multi GPU
-bash tools/dist_train.sh configs/distillers/gdd/solo_r101_ms_distill_solo_r50_coco.py 2
+bash tools/dist_test.sh configs/solo/solo_r50_fpn_1x_coco.py model_file 2 --eval segm
+```
