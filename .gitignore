@@ -1,0 +1,10 @@
+# semanticSeg
+semanticSeg/data
+semanticSeg/mmsegmentation
+semanticSeg/work_dirs
+
+
+
+# instanceSeg
+
+# objectDet
