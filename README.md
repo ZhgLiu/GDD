@@ -5,22 +5,13 @@ Generative Denoise Distillation: Simple Stochastic Noises Induce Efficient Knowl
 The code is constantly updated
 
 ## Semantic Segmentation 
-### Install
-Please follow the installation instructions for MMSegmentation and ensure successful execution.
+Please refer to [semantic segmentation](https://github.com/ZhgLiu/GDD/tree/main/semanticSeg)
 
-### Train
-```
-#single GPU
-python tools/train.py configs/distillers/gdd/psp_r101_distill_psp_r18_40k_512x512_city.py
-
-#multi GPU
-bash tools/dist_train.sh configs/distillers/mgd/psp_r101_distill_psp_r18_40k_512x512_city.py 8
-```
 ## Instance Segmentation
-Please refer to [instance segmentation]()
+Please refer to [instance segmentation](https://github.com/ZhgLiu/GDD/tree/main/instanceSeg)
 
 ## Object Classification
-Please refer to [object detection]()
+Please refer to [object detection](https://github.com/ZhgLiu/GDD/tree/main/objectDet)
 
 ## Citation
 ```

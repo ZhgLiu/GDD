@@ -31,7 +31,7 @@ mmseg/distillation/(ours) to mmsegmentation/mmseg/
 ```
 ```
 #Replace files
-mmsegmenation/mmseg/apis with mmseg/apis/train.py(ours)
+mmsegmentation/mmseg/apis/train.py with mmseg/apis/train.py(ours)
 mmsegmentation/tools/train.py with tools/train.py(ours)
 ```
 
@@ -40,8 +40,18 @@ mmsegmentation/tools/train.py with tools/train.py(ours)
 #single GPU
 python tools/train.py configs/distillers/gdd/psp_r101_distill_psp_r18_40k_512x512_city.py
 python tools/train.py configs/distillers/gdd/psp_r101_distill_deepv3_r18_40k_512x512_city.py
-
-
+```
+```
 #multi GPU
 bash tools/dist_train.sh configs/distillers/gdd/psp_r101_distill_psp_r18_40k_512x512_city.py 2
 bash tools/dist_train.sh configs/distillers/gdd/psp_r101_distill_deepv3_r18_40k_512x512_city.py 2
+```
+## Test
+```
+#single GPU
+python tools/test.py configs/pspnet/pspnet_r18-d8_512x512_40k_cityscapes.py model_file --eval mIoU
+```
+```
+#multi GPU
+bash tools/dist_test.sh configs/pspnet/pspnet_r18-d8_512x512_40k_cityscapes.py model_file 2 --eval mIoU
+```

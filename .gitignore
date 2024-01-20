@@ -3,8 +3,13 @@ semanticSeg/data
 semanticSeg/mmsegmentation
 semanticSeg/work_dirs
 
-
-
 # instanceSeg
+instanceSeg/data
+instanceSeg/mmdetection
+instanceSeg/work_dirs
+instanceSeg/SOLO_R101_3x.pth
 
 # objectDet
+objectDet/data
+objectDet/mmdetection
+objectDet/work_dirs
