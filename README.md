@@ -13,17 +13,6 @@ Please refer to [instance segmentation](https://github.com/ZhgLiu/GDD/tree/main/
 ## Object Classification
 Please refer to [object detection](https://github.com/ZhgLiu/GDD/tree/main/objectDet)
 
-## Citation
-```
-@misc{liu2024generative,
-      title={Generative Denoise Distillation: Simple Stochastic Noises Induce Efficient Knowledge Transfer for Dense Prediction}, 
-      author={Zhaoge Liu and Xiaohao Xu and Yunkang Cao and Weiming Shen},
-      year={2024},
-      eprint={2401.08332},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-```
 ## Acknowledgement
 This code is based on [MGD](https://github.com/yzd-v/MGD), thanks for their contribution.
 ```
